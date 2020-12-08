@@ -16,3 +16,10 @@ document.write(JSON.stringify(gogData.accountProducts.map(p=>({id: p.id,image:p.
 ```
 
 and paste the resulting text in a second output file, name is up to your choice
+
+
+you can get only the gamenames from the `owned.json` file with `jq`:
+
+```sh
+cat owned.json | jq -r '(.data)| .[] | select(.title).title'
+```
