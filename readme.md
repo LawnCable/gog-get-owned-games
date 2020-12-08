@@ -1,13 +1,17 @@
 ## Get your owned gog games into a json file
 
+first time setup:
+```sh
 virtualenv3 venv3
 source venv3/bin/activate
 
 pip install https://github.com/Yepoleb/pygogapi/archive/master.zip
 
-first run auth.py and follow the instructions
+# first run auth.py and follow the instructions:
+python auth.py
+```
 
-then run python getgames.py to create owned.json
+then run `python getgames.py` to create owned.json
 
 Also goto `https://www.gog.com/account` in your browser press `F12` and run following snipet in the console.
 
